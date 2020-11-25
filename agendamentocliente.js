@@ -38,7 +38,7 @@ function gravar() {
                     }
                 }
 
-                fetch("http://localhost:8080/novoagendamento", cabecalho)
+                fetch("https://front-end-java-itau.herokuapp.com/novoagendamento", cabecalho)
                     .then(res => res.json())
                     .then(res => { window.alert("Gravado com sucesso") })
                     .catch(err => { window.alert("ocorreu um erro") });
@@ -75,7 +75,7 @@ function preencheragencias(lista) {
 }
 
 function carregaragencias() {
-    fetch("http://localhost:8080/agencia")
+    fetch("https://front-end-java-itau.herokuapp.com/agencia")
         .then(res => res.json())
         .then(res => preencheragencias(res));
 }
