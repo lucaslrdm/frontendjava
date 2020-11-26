@@ -1,4 +1,13 @@
+a{
+    font-size: 14px;
+    font-family: Verdana;
+}
 
+table{
+    font-size: 14px;
+    font-family: Verdana;
+    
+}
 
 p{
     font-size: 14px;
@@ -6,23 +15,21 @@ p{
     color: green;
 }
 h3{
-    font-size: 16px;
+    font-size: 20px;
     font-family: Verdana;
-    color: grey;
-    text-align: center;
-    
 }
 .menu{
     font-size: 14px;
     font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: purple;
+    font-family: Verdana;
+    
 }
 body{
-    background-color: rgb(241, 241, 237);
+    background-color: white;
 }
 .listas{
     font-size: 12px;
+    font-family: Verdana;
     color: rgb(247, 247, 8);
 }
 
@@ -30,13 +37,22 @@ body{
     color: yellow;
     background-color: yellowgreen;
 }
+label{
+    color: coral;
+    font-family: Verdana;
+}
 .container{
-    width:500px;
+<<<<<<< HEAD
+    
     background-color: rgb(241, 241, 237);
     
+=======
+    border:0px solid white;
+    width:1000px;
+>>>>>>> 8cf1ec78891417d02b73f43b19cb674a9faa6d20
 }
 .div1{
-    background-color: rgb(241, 241, 237);
+    background-color:white);
 }
 .div2{
     background-color:rgb(241, 241, 237);
@@ -47,4 +63,3 @@ body{
 .div4{
     background-color: rgb(241, 241, 237);
 }
-
