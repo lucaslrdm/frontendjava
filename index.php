@@ -8,26 +8,47 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script type="text/javascript" src="logingerente.js"></script>
-    <link rel="stylesheet" href="css\biblioteca_estilos.css">
+    <link rel="stylesheet" href="css/biblioteca_estilos_login.css">
 </head>
-
 <body>
-
+<table border="0" width="100%" class="menu">
+        <tr>
+            <td style="text-align: center"><a href="agendamentocliente.html"> <img <td
+                        align="center">Agendamento Atendimento Presencial</td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td style="text-align: center"><a href="logingerente.html">Portal do Colaborador</a></td>
+        </tr>
+    </table>
+    <table border="0" width="100%" class="menu">
+        <tr>
+            <td align="center"><a href="agendamentocliente.html"> <img
+                        src="imagens/barra.PNG" width="100%" height="100%"> </td>
+        </tr>
+    </table>
     <div class="container">
         <br>
         <div class="row">
-            <div class="col-12">
-                <h3 style="text-align: center;">PAGINA PRINCIPAL</h3>
-            </div>
-        </div>
-        <a href = "logingerente.html">PAGINA DE LOGIN</a>
-        <br>
-        <a href = "agendamentocliente.html">PAGINA DE AGENDAMENTO</a>
-        git i i
-
-
+            <div class="col-lg-1 col-md-1 col-sm-1 div1"></div>
+            <div class="col-lg-10 col-md-10 col-sm-10 div2">
+                <BR>
+                <h3 align="center" style="text-align: center;">LOGIN - GERENTE</h3>
+                <br>
+        <div class="input-group flex-nowrap">
+            <input id="txtemail" type="email" class="form-control" placeholder="Digite seu e-mail ou racf" aria-label="Username"
+                aria-describedby="addon-wrapping">
+           
+        </div> <br>
+        
+        <div class="input-group flex-nowrap">
+            <input id="txtsenha" type="password" class="form-control" placeholder="Digite sua senha"
+                aria-label="Username" aria-describedby="addon-wrapping">
+            
+        </div><br>
+        
+        <p id = "submit"></p>
+        <button  onclick="logar()" type="button" class="btn btn-outline-dark btn-block btn-lg">Login</button>
     </div>
-
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
@@ -38,5 +59,4 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 </body>
-
 </html>
