@@ -87,7 +87,7 @@ function filtrar(){
           }
       }
 
-      fetch("https://front-end-java-itau.herokuapp.com/" + rota , cabecalho)
+      fetch("https://projeto-java-final.herokuapp.com/" + rota , cabecalho)
       .then(res=> res.json())
       .then(res => montartabela(res))
       .catch(err => {window.alert("Sem agendamentos")});   
@@ -109,7 +109,7 @@ function preencheragencias(lista) {
 }
 
 function carregaragencias() {
-    fetch("https://front-end-java-itau.herokuapp.com/agencia")
+    fetch("https://projeto-java-final.herokuapp.com/agencia")
         .then(res => res.json())
         .then(res => preencheragencias(res));
 }
@@ -125,7 +125,7 @@ function preencherclientes(lista) {
 }
 
 function carregarclientes() {
-    fetch("https://front-end-java-itau.herokuapp.com/clientes")
+    fetch("https://projeto-java-final.herokuapp.com/clientes")
         .then(res => res.json())
         .then(res => preencherclientes(res));
 }
