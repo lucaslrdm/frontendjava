@@ -12,7 +12,7 @@ function carregardados() {
         carregarclientes();
         var usuariojson = JSON.parse(usuariologado);
         document.getElementById("foto").innerHTML =
-            "<img  alt='Foto não encontrada'src=imagens/" + usuariojson.foto + ">";
+            "<img  class='img-fluid' alt='Foto não encontrada'src=imagens/" + usuariojson.foto + ">";
         document.getElementById("dados").innerHTML =
             "<h3>" + usuariojson.nome + "<br>" + usuariojson.email + "<br></h3><br><br><br>" +
             "<button type='button' class='btn btn-outline-danger' onclick='logout()''>Logout</button>";
@@ -41,6 +41,26 @@ function montartabela(lista){
 
 }
 
+function montarcsv(lista){
+    var csv = 'agencia, nome_do_cliente, email_cliente, data_agendamento, hora_agendamento\n';
+ 
+    lista.forEach(function(row) {
+            csv += row.agencia.nomeAgencia;
+            csv += ','+ row.nomecli;
+            csv += ','+ row.emailcli;
+            csv += ','+ row.dataagendamento;
+            csv += ','+ row.horaagendamento;
+            csv += '\n';
+    });
+  
+    var hiddenElement = document.createElement('a');
+    hiddenElement.href = 'data:text/csv;charset=utf-8,' + encodeURI(csv);
+    hiddenElement.target = '_blank';
+    hiddenElement.download = 'agendamentos.csv';
+    hiddenElement.click();
+
+}
+
 
 function filtrar(){
 
@@ -51,7 +71,10 @@ function filtrar(){
         document.getElementById("chkdata").checked==false
         )
         {
-        window.alert("Escolha uma opção de filtro!")
+            fetch("https://projeto-java-final.herokuapp.com/agendamentos")
+            .then(res => res.json())
+            .then(res => montartabela(res))
+            .catch(err => {window.alert("Sem agendamentos")});
     }else {
         var rota = "relatoriopor";
         if(document.getElementById("chkagencia").checked==true){
@@ -128,4 +151,61 @@ function carregarclientes() {
     fetch("https://projeto-java-final.herokuapp.com/clientes")
         .then(res => res.json())
         .then(res => preencherclientes(res));
+}
+
+function filtrarCSV(){
+
+    
+    if(
+        document.getElementById("chkagencia").checked==false && 
+        document.getElementById("chkcliente").checked==false &&
+        document.getElementById("chkdata").checked==false
+        )
+        {
+            fetch("https://projeto-java-final.herokuapp.com/agendamentos")
+            .then(res => res.json())
+            .then(res => montartabela(res))
+            .catch(err => {window.alert("Sem agendamentos")});
+    }else {
+        var rota = "relatoriopor";
+        if(document.getElementById("chkagencia").checked==true){
+            rota+="agencia";
+        }
+        if(document.getElementById("chkcliente").checked==true){
+            rota+="cliente";
+        }
+        if(document.getElementById("chkdata").checked==true){
+            rota+="data";
+            var data = document.getElementById("txtdata").value;
+                var ano = data.substring(0, 4);
+                var mes = data.substring(5, 7);
+                var dia = data.substring(8, 10);
+
+                var databrasil = dia + "/" + mes + "/" + ano
+        }
+        
+      var objeto = {
+          nomecli : document.getElementById("cmdcliente").value,
+          dataagendamento : databrasil,
+          agencia : {
+              id : document.getElementById("cmdagencia").value
+          }
+      };
+
+
+      var cabecalho = {
+          method:"POST",
+          body: JSON.stringify(objeto),
+          headers : {
+              "content-type" : "application/json"
+          }
+      }
+
+      fetch("https://projeto-java-final.herokuapp.com" + rota , cabecalho)
+      .then(res=> res.json())
+      .then(res => montarcsv(res))
+      .catch(err => {window.alert("Sem agendamentos")});   
+
+    }
+
 }
