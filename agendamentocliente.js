@@ -3,6 +3,7 @@ function gravar() {
     if (document.getElementById("nomecli").value.length > 0 
         && document.getElementById("emailcli").value.length > 0 
         && document.getElementById("celcli").value.length > 0) {
+        if(document.getElementById("emailcli").value.indexOf('@')>0){
 
         if (document.getElementById("inputAg").value > 0) {
 
@@ -14,7 +15,7 @@ function gravar() {
                 var dia = data.substring(8, 10);
 
                 var databrasil = dia + "/" + mes + "/" + ano
-
+                
                 var objeto = {
                     nomecli: document.getElementById("nomecli").value,
                     emailcli: document.getElementById("emailcli").value,
@@ -38,10 +39,19 @@ function gravar() {
                     }
                 }
 
-                fetch("https://projeto-java-final.herokuapp.com/novoagendamento", cabecalho)
+                fetch("https://backend-projetofinal1.herokuapp.com/novoagendamento", cabecalho)
                     .then(res => res.json())
-                    .then(res => { window.alert("Gravado com sucesso") })
-                    .catch(err => { window.alert("ocorreu um erro") });
+                    .then(res => { 
+                        document.getElementById("alertdata").innerHTML = 
+                        "<div class='alert alert-success' role='alert'> Agendamento realizado com sucesso! </div>"
+                        
+                        window.location.reload(true);
+                    })
+                    .catch(err => { 
+                        document.getElementById("alertdata").innerHTML = 
+                        "<div class='alert alert-danger' role='alert'> Serviço indisponível no momento, tente mais tarde </div>";
+                        //window.alert("ocorreu um erro") 
+                    });
 
             } else {
                 document.getElementById("alertdata").innerHTML =
@@ -56,6 +66,11 @@ function gravar() {
             document.getElementById("inputAg").focus();
 
         }
+    } else {
+        document.getElementById("alertdata").innerHTML =
+                "<div class='alert alert-danger' role='alert'> Coloque um email válido! </div>";
+            document.getElementById("emailcli").focus();
+    }
 
     } else {
         document.getElementById("alertdata").innerHTML =
@@ -96,4 +111,39 @@ function comparahorario(horarioinicio, horariofim){
 
     
 
+}
+
+function validaaegendamento() {
+    var data = document.getElementById("dateagenda").value;
+                var ano = data.substring(0, 4);
+                var mes = data.substring(5, 7);
+                var dia = data.substring(8, 10);
+
+                var databrasil = dia + "/" + mes + "/" + ano
+                
+                var objeto = {
+                    dataagendamento: databrasil,
+                    horaagendamento: document.getElementById("timehorainicio").value,
+                    agencia: {
+                        id: document.getElementById("inputAg").value
+
+                    }
+                }
+
+                var cabecalho = {
+                    method: "POST",
+                    body: JSON.stringify(objeto),
+                    headers: {
+                        "Content-type": "application/json"
+                    }
+                }
+
+                fetch("https://projeto-java-final.herokuapp.com/validaagendamento", cabecalho)
+                    .then(res => res.json())
+                    .then(res => gravar())
+                    .catch(err => { 
+                        document.getElementById("alertdata").innerHTML = 
+                        "<div class='alert alert-danger' role='alert'> Horário lotado, por favor escolha um diferente </div>";
+                        document.getElementById("timehorainicio").focus();
+                    });
 }
