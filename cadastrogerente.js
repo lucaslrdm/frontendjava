@@ -30,7 +30,7 @@ function gravar() {
                     .then(res => res.json())
                     .then(res => { window.alert("Gravado com sucesso") })
                     .catch(err => { window.alert("ocorreu um erro") });
-                    window.location = "login.html";
+                    window.location = "logingerente.html";
 
             } else{
                 document.getElementById("alertdata").innerHTML =
