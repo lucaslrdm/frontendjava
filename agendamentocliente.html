@@ -45,53 +45,52 @@
     <table border="0" width="100%" class="menu">
         <tr>
             <td align="center"><a href="agendamentocliente.html"> <img
-                        src="imagens/barra.png" width="100%" height="100%"> </td>
+                        src="imagens/barra.PNG" width="100%" height="100%"> </td>
         </tr>
 
     </table>
 
     <body onload="carregaragencias()">
 
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
             </div>
             <br>
             <div class="row">
-                <div class="col-lg-2 col-md-2 col-sm-2 div1"></div>
-                <div class="col-lg-8 col-md-8 col-sm-8 div2">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
                     <form>
+                            <h3 style="text-align: center;"><BR>FORMULÁRIO DE AGENDAMENTO</h3>
                         <div class="form-row">
-                            <BR>
-                                <h3 style="text-align: center;"><BR>FORMULÁRIO DE AGENDAMENTO</h3>
+                            
 
-                            <div class="form-group col-md-12">
+                            <div class="form-group col-12">
                                 <label for="inputNome">Nome</label>
                                 <input id="nomecli" type="text" class="form-control" required>
                             </div>
-                            <div class="form-group col-md-12">
+                            <div class="form-group col-12">
                                 <label for="inputEmail4">E-mail</label>
-                                <input id="emailcli" type="email" class="form-control" required>
+                                <input id="emailcli" type="email" class="form-control" required data-validation-required-message="informe um email valido">  
                             </div>
                         </div>
-                        <div class="form-group">
-                            <div class="form-group col-md-12"></div>
+                        <!--<div class="form-group col-12">-->
                             <label for="inputCelular">Telefone Celular</label>
                             <input id="celcli" type="text" class="form-control" id="inputCelular"
                                 placeholder="(xx) xxxxx-xxxx" required>
-                        </div>
-                        <div class="form-group">
-
-                            <div id="agcli" class="form-group col-md-6"></div>
+                        <br>
+                        <!--</div>-->
+                        <!--<div class="form-group col-12">-->
 
                             <label for="inputAg">Agência</label>
                             <select id="inputAg" class="form-control">
                                 <option selected>Selecione a Agência</option>
 
                             </select>
+                        <!--</div>-->
                             <BR>
 
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-6">
                                     <div class="input-group-prepend">
                                         <label for="inputAg">Data</label>
 
@@ -100,7 +99,7 @@
                                         aria-describedby="addon-wrapping">
 
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-6">
                                     <div class="input-group-prepend">
                                         <label for="inputAg">Horario Início</label>
                                     </div>
@@ -113,16 +112,15 @@
 
                             <BR>
                             <p id="alertdata"></p>
-                            <button onclick="gravar()" type="button"
+                            <button onclick="validaaegendamento()" type="button"
                                 class="btn btn-outline-dark btn-block btn-lg">Confirmar Agendamento</button>
                             <BR>
-                        </div>
+                        
 
 
                     </form>
-                    <div class="col-lg-1 col-md-1 col-sm-1 div3"></div>
                 </div>
-
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 div3"></div>
             </div>
 
 
