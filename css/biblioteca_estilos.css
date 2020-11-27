@@ -1,3 +1,5 @@
+
+
 a{
     font-size: 14px;
     font-family: Verdana;
@@ -25,7 +27,7 @@ h3{
     
 }
 body{
-    background-color: white;
+    background-color: rgb(241, 241, 237);
 }
 .listas{
     font-size: 12px;
@@ -52,14 +54,5 @@ label{
 >>>>>>> 8cf1ec78891417d02b73f43b19cb674a9faa6d20
 }
 .div1{
-    background-color:white);
-}
-.div2{
-    background-color:rgb(241, 241, 237);
-}
-.div3{
-    background-color: rgb(241, 241, 237);
-}
-.div4{
-    background-color: rgb(241, 241, 237);
+    background-color:white;
 }
