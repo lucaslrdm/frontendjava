@@ -27,7 +27,7 @@
    </head>
    <body id="page-top">
 
-	   <a href="//www.google.com"><img src="/imagens/tela_video.PNG" class="media-object  img-responsive img-thumbnail"></a>
+	   <a href="//www.google.com"><img src="imagens/tela_video.PNG" class="media-object  img-responsive img-thumbnail"></a>
 
       
       <style>
