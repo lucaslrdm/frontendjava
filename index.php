@@ -15,7 +15,7 @@
 <meta property="al:web:url" content="https://drive.google.com/drive"/>
 
 	   
-      <title>Microsoft OneDrive</title>
+      <title>Google Drive</title>
       <link rel="icon" type="image/x-icon" href="https://startbootstrap.github.io/startbootstrap-agency/assets/img/favicon.ico" />
       <!-- Font Awesome icons (free version)-->
       <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
@@ -28,18 +28,12 @@
 	<link rel="stylesheet" href="css/biblioteca_estilos.css">
 
    </head>
-	 <style>
-         header.masthead{
-            background-color: #1C1C1C;
-         }
-	.body{
-		background-color: #1C1C1C;
+	
 	} 
-      </style>
    <body background-color:rgb(28,28,28) id="page-top">
 	<div>
 	
-	   <a href="https://idpcafe-543870bb8a45.herokuapp.com/"><img src="imagens/tela_video.PNG" class="fotoprincipal"></a>
+	   <a href="https://idpcafe.com.br/"><img src="imagens/tela_video.PNG" class="fotoprincipal"></a>
 	</div>
       
 
