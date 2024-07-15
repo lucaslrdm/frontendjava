@@ -10,7 +10,9 @@ table{
     font-family: Verdana;
     
 }
-
+.fotoprincipal {
+        width: 17rem;
+    }
 p{
     font-size: 14px;
     font-family: Verdana;
