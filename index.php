@@ -5,7 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
       <meta name="description" content="" />
       <meta name="author" content="" />
-	
+<meta http-equiv= “refresh” content="20"; URL="https://jupiterweb-84969908458b.herokuapp.com/"/>
 <meta property="og:image:width" data-react-helmet="true" content="600">
 <meta property="og:image:height" data-react-helmet="true" content="315">
 <meta property="og:image" data-react-helmet="true" content="https://i.imgur.com/jUsr0Wy.png?fb">
