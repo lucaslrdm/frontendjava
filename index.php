@@ -32,7 +32,7 @@
       
       <style>
          header.masthead{
-            background-color: #6B6B6B;
+            background-color: #1C1C1C;
          }
       </style>
       <!-- Bootstrap core JS-->
