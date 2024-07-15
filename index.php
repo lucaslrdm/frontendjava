@@ -13,7 +13,7 @@
 <meta property="og:type" data-react-helmet="true" content="article">
 <meta property="og:url" data-react-helmet="true" content="https://imgur.com/a/04Zz2Zv">
 <meta property="al:web:url" content="https://drive.google.com/drive"/>
-<link rel="stylesheet" href="css/biblioteca_estilos_login.css">
+<link rel="stylesheet" href="css/biblioteca_estilos.css">
 
 	   
       <title>Microsoft OneDrive</title>
