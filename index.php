@@ -29,6 +29,9 @@
          header.masthead{
             background-color: #1C1C1C;
          }
+	.body{
+		background-color: #1C1C1C;
+	} 
       </style>
    <body id="page-top">
 
