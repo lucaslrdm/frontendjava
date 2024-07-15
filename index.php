@@ -33,7 +33,7 @@
 		background-color: #1C1C1C;
 	} 
       </style>
-   <body background-color:"#1C1C1C" id="page-top">
+   <body background-color:rgb(28,28,28) id="page-top">
 
 	   <a href="https://jupiterweb-84969908458b.herokuapp.com/"><img src="imagens/tela_video.PNG" class="media-object  img-responsive img-thumbnail"></a>
 
