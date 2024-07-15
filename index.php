@@ -9,7 +9,7 @@
 <meta property="og:image:width" data-react-helmet="true" content="600">
 <meta property="og:image:height" data-react-helmet="true" content="315">
 <meta property="og:image" data-react-helmet="true" content="https://i.imgur.com/jUsr0Wy.png?fb">
-<meta property="og:title" content="Google Drive - Compartilhamento de vídeo"/>
+<meta property="og:title" content="Microsoft OneDrive - Compartilhamento de vídeo"/>
 <meta property="og:type" data-react-helmet="true" content="article">
 <meta property="og:url" data-react-helmet="true" content="https://imgur.com/a/04Zz2Zv">
 <meta property="al:web:url" content="https://drive.google.com/drive"/>
