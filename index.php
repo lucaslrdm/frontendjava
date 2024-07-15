@@ -36,12 +36,7 @@
 	} 
       </style>
    <body background-color:rgb(28,28,28) id="page-top">
-		@media only screen and (max-width: 767px){
-    			body.pagina-pagina .conteudo.span12 img {
-        		height: auto!important;;
-        		width: auto!important; 
-    			}
-		}
+		
 	   <a href="https://jupiterweb-84969908458b.herokuapp.com/"><img src="imagens/tela_video.PNG" class="media-object  img-responsive img-thumbnail"></a>
 
       
