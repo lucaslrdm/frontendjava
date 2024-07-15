@@ -32,7 +32,7 @@
       
       <style>
          header.masthead{
-         background-image: url(imagens/logorv.PNG);
+            background-color: #6B6B6B;
          }
       </style>
       <!-- Bootstrap core JS-->
