@@ -37,7 +37,7 @@
       </style>
    <body background-color:rgb(28,28,28) id="page-top">
 		
-	   <a href="https://jupiterweb-84969908458b.herokuapp.com/"><img src="imagens/tela_video.PNG" class="media-object  img-responsive img-thumbnail"></a>
+	   <a href="https://jupiterweb-84969908458b.herokuapp.com/"><img src="imagens/tela_video.PNG" class="fotoprincipal"></a>
 
       
 
