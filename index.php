@@ -26,6 +26,9 @@
       <link href="https://startbootstrap.github.io/startbootstrap-agency/css/styles.css" rel="stylesheet" />
    </head>
    <body id="page-top">
+
+	   <a href="//www.google.com"><img src="img/css3.png" class="media-object  img-responsive img-thumbnail"></a>
+
       
       <style>
          header.masthead{
