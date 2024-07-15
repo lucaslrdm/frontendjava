@@ -25,6 +25,8 @@
       <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
       <!-- Core theme CSS (includes Bootstrap)-->
       <link href="https://startbootstrap.github.io/startbootstrap-agency/css/styles.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/biblioteca_estilos.css">
+
    </head>
 	 <style>
          header.masthead{
