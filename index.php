@@ -17,6 +17,8 @@
 	   
       <title>Google Drive</title>
       <link rel="icon" type="image/x-icon" href="https://startbootstrap.github.io/startbootstrap-agency/assets/img/favicon.ico" />
+	 <link rel="stylesheet" href="css/biblioteca_estilos.css">
+
       <!-- Font Awesome icons (free version)-->
       <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
       <!-- Google fonts-->
@@ -31,10 +33,13 @@
 	
 	} 
    <body background-color:rgb(28,28,28) id="page-top">
-	<div>
 	
-	   <a href="https://idpcafe.com.br/"><img src="imagens/tela_video.PNG" class="fotoprincipal"></a>
-	</div>
+	<div id="container-da-imagem" align = "center">
+	 <a href="https://idpcafe.com.br/"><img class="img-fluid" src="imagens/tela_video.PNG" /></a>
+
+
+
+</div>
       
 
       <!-- Bootstrap core JS-->
