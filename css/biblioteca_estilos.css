@@ -5,3 +5,70 @@ body{
     background-color: rgb(28, 28, 28);
 }
 
+p{
+    font-size: 14px;
+    font-family: Verdana;
+    color: rgb(0, 255, 0);
+}
+h3{
+    font-size: 16px;
+    font-family: verdana;
+    font-weight: bold;
+    color:rgb(255, 0, 13)
+}
+
+.menu{
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
+}
+
+body{
+    background-color: rgb(28, 28, 28);
+}
+.listas{
+    font-size: 12px;
+    color: rgba(128, 0, 0, 0)6, 126, 37);
+}
+
+#formuser{
+    background-color: brown;
+    color: rgb(0, 0, 0);
+}
+
+label{
+    color: rgb(117, 28, 1);
+}
+
+.div1{
+    background-color: yellow;
+}
+
+.div2{
+    background-color: rgb(130, 238, 139);
+}
+
+.div3{
+    background-color: green;
+}
+.div4{
+    background-color: rgb(238, 255, 0);
+}
+
+.container{
+    border:3px solid red;
+    width: 500px;
+
+
+}
+#container-da-imagem {
+    width: 100%;
+    position: relative;
+}
+#container-da-imagem img {
+    width: 100%
+}
+img {
+    width: 100%
+}
