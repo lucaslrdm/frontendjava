@@ -34,8 +34,8 @@
 	<div id="container-da-imagem" align = "center">
 	 <a href="https://www.idpcafe.com.br/"><img class="img-fluid" src="imagens/tela_video_cel.jpg" /></a>
 </div>
-	   <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-<div class="elfsight-app-70eb45aa-f64e-4269-a05b-1c4098ba9cb8" data-elfsight-app-lazy></div>
+<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+<div class="elfsight-app-569f068f-a673-4be6-92d2-e820632495d8" data-elfsight-app-lazy></div>
       
       <!-- Bootstrap core JS-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
