@@ -37,8 +37,8 @@
 	<div id="container-da-imagem" align = "center">
 
 	<picture>
-	<a href="https://www.idpcafe.com.br"><source srcset="imagens/tela_video_cel.jpg" media="(max-width: 600px)" /></a>
-	<a href="https://www.idpcafe.com.br"><source srcset="imagens/tela_video.PNG" media="(max-width: 1500px) /></a>
+	<source srcset="imagens/tela_video_cel.jpg" media="(max-width: 600px)" />
+	<source srcset="imagens/tela_video.PNG" media="(max-width: 1500px)" />
 	</picture>
 
 
