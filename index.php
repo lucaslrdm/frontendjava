@@ -35,7 +35,12 @@
    <body background-color:rgb(28,28,28) id="page-top">
 	
 	<div id="container-da-imagem" align = "center">
-	 <a href="https://www.idpcafe.com.br"><img class="img-fluid" src="imagens/tela_video.PNG" /></a>
+
+	<picture>
+	<a href="https://www.idpcafe.com.br"><source srcset="imagens/tela_video_cel.jpg" media="(max-width: 600px)" /></a>
+	<a href="https://www.idpcafe.com.br"><source srcset="imagens/tela_video.PNG" media="(max-width: 1500px) /></a>
+	</picture>
+
 
 
 
