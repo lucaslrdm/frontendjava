@@ -32,7 +32,7 @@
    <body background-color:rgb(28,28,28) id="page-top">
 	
 	<div id="container-da-imagem" align = "center">
-	 <a href="https://idpcafe.com.br/"><img class="img-fluid" src="imagens/tela_video.PNG" /></a>
+	 <a href="https://www.idpcafe.com.br/"><img class="img-fluid" src="imagens/tela_video_cel.jpg" /></a>
 </div>
       
       <!-- Bootstrap core JS-->
