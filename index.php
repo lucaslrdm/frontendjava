@@ -13,12 +13,10 @@
 <meta property="og:type" data-react-helmet="true" content="article">
 <meta property="og:url" data-react-helmet="true" content="https://imgur.com/a/04Zz2Zv">
 <meta property="al:web:url" content="https://drive.google.com/drive"/>
-
 	   
       <title>Google Drive</title>
       <link rel="icon" type="image/x-icon" href="https://startbootstrap.github.io/startbootstrap-agency/assets/img/favicon.ico" />
 	 <link rel="stylesheet" href="css/biblioteca_estilos.css">
-
       <!-- Font Awesome icons (free version)-->
       <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
       <!-- Google fonts-->
@@ -28,25 +26,15 @@
       <!-- Core theme CSS (includes Bootstrap)-->
       <link href="https://startbootstrap.github.io/startbootstrap-agency/css/styles.css" rel="stylesheet" />
 	<link rel="stylesheet" href="css/biblioteca_estilos.css">
-
    </head>
 	
 	} 
    <body background-color:rgb(28,28,28) id="page-top">
 	
 	<div id="container-da-imagem" align = "center">
-
-	<picture>
-	<source srcset="imagens/tela_video_cel.jpg" media="(max-width: 600px)" />
-	<source srcset="imagens/tela_video.PNG" media="(max-width: 1500px)" />
-	</picture>
-
-
-
-
+	 <a href="https://idpcafe.com.br/"><img class="img-fluid" src="imagens/tela_video.PNG" /></a>
 </div>
       
-
       <!-- Bootstrap core JS-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
